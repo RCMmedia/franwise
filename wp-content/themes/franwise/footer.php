@@ -124,7 +124,7 @@ jQuery(".mobile-menu").slideToggle('');
 
 jQuery(window).resize(function(){
             
-  if (Modernizr.mq('(max-width: 555px)')) {
+  if (Modernizr.mq('(max-width: 755px)')) {
       
       jQuery( ".search-bar" ).appendTo( jQuery( ".mobile-menu" ) );
 			jQuery( ".navigation" ).appendTo( jQuery( ".mobile-menu" ) );
@@ -133,7 +133,7 @@ jQuery(window).resize(function(){
   } else {
       
       // Clear the settings etc
-      jQuery( ".search-bar" ).insertAfter( jQuery( ".logo" ) );
+       jQuery( ".search-bar" ).insertAfter( jQuery( ".logo" ) );
 			jQuery( ".navigation" ).insertAfter( jQuery( ".search-bar" ) );
 			jQuery( ".top_header .inner .right" ).insertAfter( jQuery( ".top_header .inner .left" ) );
   

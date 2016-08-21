@@ -72,15 +72,22 @@
 <div class="mobile-menu clearfix" style="display: none;">
 	<a class="phone-number button" href="tel:714-434-1516">714-434-1516</a>
 </div>
-<div class="hero-banner" style="background: url(<?php the_field('hero_banner'); ?>) no-repeat scroll 0 0 / cover">
+	<?php if ( is_front_page() ||  is_page()  ) { ?>
+		<div class="hero-banner" style="background: url(<?php the_field('hero_banner'); ?>) no-repeat scroll 0 0 / cover">
+	<?php  } elseif ( is_home() ) {  ?>
+		<div class="hero-banner" style="background: url(<?php the_field('hero_banner', get_option('page_for_posts')); ?>) no-repeat scroll 0 0 / cover">
+	<?php } ?>
+		
 	<div class="vertically-align">
 		<div class="cta">
 			
 			<?php if ( is_front_page() ) { ?>
 				  <h1><?php the_field('banner_title'); ?></h1>
 					<a href="#" class="trigger-overlay contact-us">Franchise Your Business</a>
-				<?php  } else {  ?>
-				  <span><?php the_field('banner_title', get_option('page_for_posts')); ?></span>
+				<?php  } elseif ( is_home() ) {  ?>
+					<span><?php the_field('banner_title', get_option('page_for_posts')); ?></span>
+				<?php } else {  ?>
+				  <span><?php the_field('banner_title'); ?></span>
 			<?php	} ?>
 			
 		</div><!-- .cta -->

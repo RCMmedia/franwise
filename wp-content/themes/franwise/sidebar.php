@@ -1,3 +1,29 @@
+<?php if ( is_home() || is_single() ) { ?>
+	<div class="sidebar-box archive">
+		
+		<h4>Categories</h4>
+		<ul>
+			<?php wp_list_categories(array('title_li' => false)); ?>
+		</ul>
+		
+		<h4>Archives</h4>
+		<ul>
+		<?php wp_get_archives(array(
+			'type'=>'monthly', 
+			'show_post_count'=>true, 
+			'limit'=>20, 
+			'post_type'=>'post', 
+			'format'=>'html' 
+		));
+			
+		
+		
+		?>
+		</ul>
+	</div>
+<?php  }  ?>
+
+
 <div class="sidebar-box">
 	<ul>
 		<li><span>Straightforward</span></li>

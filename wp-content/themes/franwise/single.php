@@ -7,22 +7,43 @@
  * @since Twenty Ten 1.0
  */
 
+
 get_header(); ?>
+	<div class="main">	
+		<div class="inner clearfix">
+			<div class="content clearfix">
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+		<div class="meta-data">Posted on: <?php the_time('l, F jS, Y') ?></div>
+		<?php 
+			$post_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'medium');
+			
+		?>
+		<div class="featured-image">
+			<img src="<?php echo $post_image[0];  ?>"/>
+		</div>
+		<?php the_content(); ?>
 
-		<div id="container">
-			<div id="content" role="main">
+		<div class="social-wrap">
+			<?php echo do_shortcode('[feather_share url="'.get_permalink() .'"]'); ?>
+		</div>
+		<?php //edit_post_link(); ?>
+	</div>
 
-			<?php
-			/*
-			 * Run the loop to output the post.
-			 * If you want to overload this in a child theme then include a file
-			 * called loop-single.php and that will be used instead.
-			 */
-			get_template_part( 'loop', 'single' );
-			?>
+<?php endwhile; ?>
 
-			</div><!-- #content -->
-		</div><!-- #container -->
+<?php else : ?>
 
-<?php get_sidebar(); ?>
+	<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+		<h1>Not Found</h1>
+	</div>
+
+<?php endif; ?>
+			</div><!-- .content -->
+			<div class="sidebar">
+				<?php get_sidebar(); ?>
+			</div><!-- .sidebar -->
+		</div><!-- .inner -->
+	</div>	
 <?php get_footer(); ?>
