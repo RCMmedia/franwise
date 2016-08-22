@@ -27,8 +27,8 @@ get_header(); ?>
 			
 			<div class="cta-six-step">
 				<div class="inner">
-					<h3><a class="trigger-overlay contact-us teal" href="#">Contact us </a>today to learn the <a href="#" class="trigger-overlay contact-us teal">Six-Step Conversion</a> process to convert your business with ease and expertise.</h3>
-					<a class="button trigger-overlay contact-us" href="#">Contact us</a>
+					<h3><a class="trigger-overlay contact-us teal " href="#">Contact us </a>today to learn the <a href="#" class="trigger-overlay contact-us teal">Six-Step Conversion</a> process to convert your business with ease and expertise.</h3>
+					<a class="button trigger-overlay contact-us " href="#">Contact us</a>
 					
 					<div class="feature-list">
 						<div class="feature">
