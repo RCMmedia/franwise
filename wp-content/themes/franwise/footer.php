@@ -78,6 +78,7 @@
 
 jQuery(document).on("click", ".trigger-overlay.fcx", function () {
 	jQuery('.overlay_wrap.fcx').toggleClass('active');
+	jQuery('.gform-wrap').hide();
 });
 
 jQuery(document).on("click", ".request-fcx", function () {
@@ -135,7 +136,7 @@ jQuery(window).resize(function(){
       // Clear the settings etc
        jQuery( ".search-bar" ).insertAfter( jQuery( ".logo" ) );
 			jQuery( ".navigation" ).insertAfter( jQuery( ".search-bar" ) );
-			jQuery( ".top_header .inner .right" ).insertAfter( jQuery( ".top_header .inner .left" ) );
+			jQuery( ".mobile-menu .right" ).insertAfter( jQuery( ".top_header .inner .left" ) );
   
   }
 
