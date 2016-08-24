@@ -341,16 +341,18 @@ div.ginput_container_name span {padding: 0 10px}
 	.footer-banner .cta a{font-size:20px}
 	.circuit-board{padding:0 20px}
 	.overlay_inner{max-width:100%}
-	.overlay_wrap.form-active,#wpas-results.form-active{display:block;padding-top:40px}
+	.overlay_wrap,.overlay_wrap.form-active,#wpas-results.form-active{display:block;padding-top:0px}
 	.search-inner > img{margin-bottom:-13px}
 /* 	#wpas-submit{display:none} */
 	.button,.gform_button{-webkit-appearance:none}
 	.overlay_inner,#wpas-results-inner {padding: 60px 40px;}
+/* 	.gforms_confirmation_message {height: 100vh} */
 	#wpas-submit {overflow: visible}
 	.wpas-submit.button {padding: 5px;}
 	#wpas-submit.active {width: 59px;
 transition: all 0.3s ease 0s;
 margin-bottom: -15px;
 margin-left: -5px;}
+.wpas-search_query input {margin-bottom: -2px;}
 
 }/*  555 */
