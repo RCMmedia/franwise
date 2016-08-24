@@ -1,7 +1,4 @@
-<?php
-
-
-get_header(); ?>
+<?php get_header(); ?>
 	<div class="main">	
 		<div class="inner clearfix">
 			<div class="content clearfix">

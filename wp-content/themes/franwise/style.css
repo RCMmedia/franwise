@@ -342,7 +342,7 @@ div.ginput_container_name span {padding: 0 10px}
 	.circuit-board{padding:0 20px}
 	.overlay_inner{max-width:100%}
 	.overlay_wrap,.overlay_wrap.form-active,#wpas-results.form-active{display:block;padding-top:0px}
-	.search-inner > img{margin-bottom:-13px}
+	.search-inner > img{margin-bottom:-9px}
 /* 	#wpas-submit{display:none} */
 	.button,.gform_button{-webkit-appearance:none}
 	.overlay_inner,#wpas-results-inner {padding: 60px 40px;}
