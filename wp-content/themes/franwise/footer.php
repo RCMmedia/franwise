@@ -129,7 +129,7 @@ jQuery(window).resize(function(){
       
       jQuery( ".search-bar" ).appendTo( jQuery( ".mobile-menu" ) );
 			jQuery( ".navigation" ).appendTo( jQuery( ".mobile-menu" ) );
-			jQuery( ".top_header .inner .right" ).insertAfter( jQuery( ".navigation" ) );
+			jQuery( ".top_header .inner .right" ).appendTo( jQuery( ".navigation" ) );
       
   } else {
       
