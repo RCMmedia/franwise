@@ -23,10 +23,11 @@ get_header(); ?>
 		<div class="meta-data">Posted on: <?php the_time('l, F jS, Y') ?></div>
 		<?php 
 			$post_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'medium');
-			
 		?>
 		<div class="featured-image">
-			<img src="<?php echo $post_image[0];  ?>"/>
+			<?php if ( $post_image) { ?>
+				<img src=" <?php echo $post_image[0]    ?>"/>
+			<?php } ?>
 		</div>
 		<?php the_excerpt(); ?>
 		<div class="read-more">
