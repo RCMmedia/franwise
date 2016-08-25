@@ -21,7 +21,9 @@ get_header(); ?>
 			
 		?>
 		<div class="featured-image">
-			<img src="<?php echo $post_image[0];  ?>"/>
+			<?php if ( $post_image) { ?>
+				<img src=" <?php echo $post_image[0]    ?>"/>
+			<?php } ?>
 		</div>
 		<?php the_content(); ?>
 
