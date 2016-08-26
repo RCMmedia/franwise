@@ -129,7 +129,7 @@ jQuery(window).resize(function(){
       
       jQuery( ".search-bar" ).appendTo( jQuery( ".mobile-menu" ) );
 			jQuery( ".navigation" ).appendTo( jQuery( ".mobile-menu" ) );
-			jQuery( ".top_header .inner .right" ).appendTo( jQuery( ".navigation" ) );
+			jQuery( ".top_header .inner .right" ).appendTo	( jQuery( ".navigation" ) );
       
   } else {
       
@@ -141,7 +141,12 @@ jQuery(window).resize(function(){
   }
 
 }).resize();
+
+	jQuery('body').delay(1000).queue(function(){
+		jQuery(this).addClass('fadein').clearQueue();
+	});		
 </script>
+
 
 <?php
 	/*

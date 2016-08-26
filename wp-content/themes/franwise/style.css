@@ -24,7 +24,8 @@ del{text-decoration:line-through}
 table{border-collapse:collapse;border-spacing:0}
 input[type=submit]:focus,input[type=button]:focus{outline:none}
 sup{font-family:Arial;font-size:60%;vertical-align:top}
-body{background: #fff;color:#666667;font-family:sans-serif; font-size: 16px;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{background: #fff;color:#666667;font-family:sans-serif; font-size: 16px;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;opacity: 0;}
+body.fadein {opacity: 1;transition: all 0.3s ease 0s;}
 
 /* Typeogrophy */
 h1,.footer-banner h2{font-size:40px;margin-bottom:25px}
