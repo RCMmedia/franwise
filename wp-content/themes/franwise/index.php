@@ -55,8 +55,9 @@ get_header(); ?>
 				<?php get_sidebar(); ?>
 			</div><!-- .sidebar -->
 			<div class="page-navigation">
-		<div class="next-posts"><?php next_posts_link(); ?></div>
+		
 		<div class="prev-posts"><?php previous_posts_link(); ?></div>
+		<div class="next-posts"><?php next_posts_link(); ?></div>
 	</div>
 		</div><!-- .inner -->
 	</div>	

@@ -136,7 +136,7 @@ jQuery(window).resize(function(){
       // Clear the settings etc
        jQuery( ".search-bar" ).insertAfter( jQuery( ".logo" ) );
 			jQuery( ".navigation" ).insertAfter( jQuery( ".search-bar" ) );
-			jQuery( ".mobile-menu .right" ).insertAfter( jQuery( ".top_header .inner .left" ) );
+			jQuery( ".navigation .right" ).appendTo( jQuery( ".top_header .inner " ) );
   
   }
 

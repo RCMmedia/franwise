@@ -144,7 +144,7 @@ body.page-template-page-inner .content,body.page-template-default .content, body
 	body.page-template-page-inner .main .inner, 
 	body.page-template-default .main .inner, 
 	body.blog .main .inner,  
-	body.single .main .inner  {display: flex;}
+	body.single .main .inner  {display: flex;flex-wrap: wrap}
 	
 	body.page-template-page-inner .content, 
 	body.page-template-default .content, 
@@ -194,6 +194,20 @@ body.blog .read-more a {text-decoration: none;}
 .featured-image {
   margin-bottom: 20px;
 }
+.page-navigation {
+  padding: 20px 0;
+  width: 100%;
+}
+.next-posts {float: right;}
+.next-posts a, .prev-posts a  {
+  background: #1bb59f none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  
+  font-weight: bold;
+  padding: 10px;
+}
+.prev-posts {float: left}
 /* sidebar */
 .sidebar{color:#000;float:right;padding:50px 0;width:245px}
 .sidebar-box{border:3px solid #1bb59f;box-shadow:4px -4px 0 0 #1bb59f;display:inline-block;float:left;font-size:23px;font-weight:700;margin-top:4px;margin-bottom:20px;padding:20px;text-align:left;width:100%}
@@ -316,6 +330,9 @@ div.ginput_container_name span {padding: 0 10px}
 } /* 845px */
 
 @media screen and (max-width: 755px) {
+	.main .inner {
+  padding: 0 10px;
+}
 	.header{padding:13px 10px}
 	h1,.footer-banner h2{font-size:6vw;margin-bottom:25px}
 	.mobile-menu{background:#f4f5f5 none repeat scroll 0 0;display:block;padding:40px 10px;text-align:center}
@@ -331,7 +348,7 @@ div.ginput_container_name span {padding: 0 10px}
 	#nav-icon{margin:8px;top:0}
 	.hero-banner .cta a{display:inline;font-size:20px}
 	body.page-template-page-inner .main .inner,body.page-template-default .main .inner{display:unset}
-	body.page-template-page-inner .content,body.page-template-default .content{flex:unset;float:none;max-width:100%;padding:20px 10px}
+	body.page-template-page-inner .content,body.page-template-default .content,body.blog .content{flex:unset;float:none;max-width:100%;padding:20px 10px}
 	.team-member{display:flex;flex-flow:row wrap;margin-bottom:65px}
 	.member-photo{margin-bottom:20px;text-align:center;width:100%}
 	.content{color:#3b3b3b;font-size:21px;padding:50px 10px}
