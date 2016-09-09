@@ -130,6 +130,8 @@ jQuery(window).resize(function(){
       jQuery( ".search-bar" ).appendTo( jQuery( ".mobile-menu" ) );
 			jQuery( ".navigation" ).appendTo( jQuery( ".mobile-menu" ) );
 			jQuery( ".top_header .inner .right" ).appendTo	( jQuery( ".navigation" ) );
+			jQuery(".header").stick_in_parent();
+		jQuery(".mobile-menu").stick_in_parent();
       
   } else {
       
@@ -145,8 +147,34 @@ jQuery(window).resize(function(){
 	jQuery('body').delay(1000).queue(function(){
 		jQuery(this).addClass('fadein').clearQueue();
 	});		
-</script>
+	jQuery("#wpas-load-btn").addClass("button");
+	
+	//automagically wrap all registered trademarks with <sup> tags
+		$('body :not(script)').contents().filter(function() {
+    	return this.nodeType === 3;
+			}).replaceWith(function() {
+			return this.nodeValue.replace(/[®]/g, '<sup>$&</sup>');
+		});
+	
+/*
+	 var topofDiv = jQuery(".top_header").offset().top; //gets offset of header
+			var height = jQuery(".top_header").outerHeight(); //gets height of header
 
+			jQuery(window).scroll(function(){
+			    if(jQuery(window).scrollTop() > (topofDiv + height)){
+			       jQuery('.header').addClass('fixed');
+			    }
+			    else{
+			       jQuery('.header').removeClass('fixed');
+			    }
+			});
+*/
+			
+		
+		 
+
+			
+</script>
 
 <?php
 	/*

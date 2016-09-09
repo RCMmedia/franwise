@@ -27,6 +27,8 @@
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 <?php wp_head(); ?>
 <script type='text/javascript' src='<?php bloginfo('template_url') ?>/js/modernizr.js'></script>
+<script src="<?php bloginfo('template_url') ?>/js/sticky.js"></script>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -36,11 +38,11 @@
 			<a href="#" class="trigger-overlay fcx">Visit FranchiseCapitalExchange.com</a>
 		</div><!-- .left -->
 		<div class="right">
-			<span class="social-icon"><img src="<?php bloginfo('template_url') ?>/images/icons/facebook-48.png" alt="facebook-48"  height="17"></span>
-			<span class="social-icon"><img src="<?php bloginfo('template_url') ?>/images/icons/linkedin-64.png" alt="linkedin-64" height="17"></span>
-			<span class="social-icon"><img src="<?php bloginfo('template_url') ?>/images/icons/twitter-48.png" alt="twitter-48" height="17"></span>
-			<span class="social-icon"><img src="<?php bloginfo('template_url') ?>/images/icons/google-plus-48.png" alt="google-plus-48" height="17"></span>
-			<span class="social-icon"><img src="<?php bloginfo('template_url') ?>/images/icons/youtube-6-48.png" alt="google-plus-48" height="17"></span>
+			<a class="social-icon" href="https://www.facebook.com/FranWiseServices?ref=" target="_blank"><img src="<?php bloginfo('template_url') ?>/images/icons/facebook-48.png" alt="facebook-48"  height="17"></a>
+			<a class="social-icon" href="http://www.linkedin.com/in/maryannoconnell" target="_blank"><img src="<?php bloginfo('template_url') ?>/images/icons/linkedin-64.png" alt="linkedin-64" height="17"></a>
+			<a class="social-icon" href="https://twitter.com/FranWise" target="_blank"><img src="<?php bloginfo('template_url') ?>/images/icons/twitter-48.png" alt="twitter-48" height="17"></a>
+			<a class="social-icon" href="https://plus.google.com/109054287618719742597" target="_blank"><img src="<?php bloginfo('template_url') ?>/images/icons/google-plus-48.png" alt="google-plus-48" height="17"></a>
+			<a class="social-icon" href="http://www.youtube.com/channel/UCNUv34yKLu8rl4rt4DxtleQ" target="_blank"><img src="<?php bloginfo('template_url') ?>/images/icons/youtube-6-48.png" alt="google-plus-48" height="17"></a>
 			<a class="phone-number" href="tel:714-434-1516">714-434-1516</a>
 		</div><!-- .right -->
 	</div><!-- .inner -->

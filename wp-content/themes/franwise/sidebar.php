@@ -1,4 +1,4 @@
-<?php if ( is_home() || is_single() ) { ?>
+<?php if ( is_home() || is_single() ||  is_archive()  ) { ?>
 	<div class="sidebar-box archive">
 		
 		<h4>Categories</h4>
@@ -32,7 +32,7 @@
 		<li><span>Affordable</span></li>
 	</ul>
 	<div class="text-center">
-		<a class="button" href="#">Contact Us</a>
+		<a class="button trigger-overlay contact-us" href="#">Contact Us</a>
 	</div><!-- .text-center -->
 </div><!-- .sidebar-box -->
 

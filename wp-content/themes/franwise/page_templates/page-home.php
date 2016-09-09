@@ -56,29 +56,29 @@ get_header(); ?>
 					<h3>Our Services Include</h3>
 					
 					<div class="service-item">
-						<img src="<?php bloginfo('template_url') ?>/images/consultations.jpg" />
-						<span>Consultations</span>
+						<a href="<?php bloginfo('url') ?>/consultation/"><img src="<?php bloginfo('template_url') ?>/images/consultations.jpg" />
+						<span>Consultations</span></a>
 					</div>
 					<div class="service-item">
-						<img src="<?php bloginfo('template_url') ?>/images/manuals.jpg" />
-						<span>Manuals</span>
+						<a href="<?php bloginfo('url') ?>/manuals-training"><img src="<?php bloginfo('template_url') ?>/images/manuals.jpg" />
+						<span>Manuals</span></a>
 					</div>
 					<div class="service-item">
-						<img src="<?php bloginfo('template_url') ?>/images/templates.jpg" />
-						<span>Templates</span>
+						<a href="<?php bloginfo('url') ?>/manuals-training"><img src="<?php bloginfo('template_url') ?>/images/templates.jpg" />
+						<span>Templates</span></a>
 					</div>
 					
 					<div class="service-item">
-						<img src="<?php bloginfo('template_url') ?>/images/training.jpg" />
-						<span>Training</span>
+						<a href="<?php bloginfo('url') ?>/manuals-training"><img src="<?php bloginfo('template_url') ?>/images/training.jpg" />
+						<span>Training</span></a>
 					</div>
 					<div class="service-item">
-						<img src="<?php bloginfo('template_url') ?>/images/translations.jpg" />
-						<span>Translations</span>
+						<a href="<?php bloginfo('url') ?>/consultation"><img src="<?php bloginfo('template_url') ?>/images/translations.jpg" />
+						<span>Translations</span></a>
 					</div>
 					<div class="service-item">
-						<img src="<?php bloginfo('template_url') ?>/images/online-interactive.jpg" />
-						<span>Online/Interactive/Traditional</span>
+						<a href="<?php bloginfo('url') ?>/the-team"><img src="<?php bloginfo('template_url') ?>/images/online-interactive.jpg" />
+						<span>Online/Interactive/Traditional</span></a>
 					</div>
 					
 				</div><!-- .inner -->
