@@ -395,7 +395,8 @@ margin-bottom: -15px;
 margin-left: -5px;}
 .wpas-search_query {max-width: 150px}
 .wpas-search_query input {
-  margin-bottom: 3px;
+  margin-bottom: 2px;
+padding: 2px;
 }
 .featured-image > img {
   height: auto;
