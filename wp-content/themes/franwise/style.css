@@ -354,6 +354,7 @@ div.ginput_container_name span {padding: 0 10px}
 	.header{padding:13px 10px}
 	h1,.footer-banner h2{font-size:6vw;margin-bottom:25px}
 	.mobile-menu{background:#f4f5f5 none repeat scroll 0 0;display:block;padding:40px 10px;text-align:center}
+	.mobile-menu.is_stuck {padding-top: 100px}
 	.search-bar{display:inline-block;float:none;margin-top:4%;text-align:center;width:100%}
 	.wpas-search_query input{background:transparent}
 	.phone-number{display:inline-block;float:none;font-weight:700;margin-left:10px;margin-top:3px}
