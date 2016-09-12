@@ -150,7 +150,7 @@ jQuery(window).resize(function(){
 	jQuery("#wpas-load-btn").addClass("button");
 	
 	//automagically wrap all registered trademarks with <sup> tags
-		$('body :not(script)').contents().filter(function() {
+		$('body:not(script)').contents().filter(function() {
     	return this.nodeType === 3;
 			}).replaceWith(function() {
 			return this.nodeValue.replace(/[®]/g, '<sup>$&</sup>');

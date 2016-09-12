@@ -348,6 +348,20 @@ div.ginput_container_name span {padding: 0 10px}
   text-align: center;
   z-index: 1000;
 }
+.wpas-search_query.wpas-search-field.wpas-field {position: relative;}
+.wpas-search_query.wpas-search-field.wpas-field::before {
+  background: rgba(0, 0, 0, 0) url("http://localhost/franwise/wp-content/themes/franwise/images/icon-search.png") no-repeat scroll 0 0;
+  border-bottom: 2px solid #1bb59f;
+  content: " ";
+  display: inline-block;
+  height: 30px;
+  left: -21px;
+  padding-bottom: 10px;
+  position: absolute;
+  top: 0px;
+  width: 21px;
+}
+.search-inner img {display: none;}
 	.main .inner {
   padding: 0 10px;
 }
@@ -388,20 +402,36 @@ div.ginput_container_name span {padding: 0 10px}
 	.button,.gform_button{-webkit-appearance:none}
 	.overlay_inner,#wpas-results-inner {padding: 60px 40px;}
 /* 	.gforms_confirmation_message {height: 100vh} */
-	#wpas-submit {overflow: visible;margin-left: -3px;margin-bottom: -8px}
-	.wpas-submit.button {padding: 5px;}
+	
+	
+	.wp-advanced-search {
+  display: block;
+  position: relative
+}
+	
+#wpas-submit {
+  bottom: 0;
+  margin-bottom: 0;
+  margin-left: -3px;
+  overflow: visible;
+  position: absolute;
+}
+	.wpas-submit.button {padding: 5px;margin: 0}
 	#wpas-submit.active {width: 59px;
 transition: all 0.3s ease 0s;
 margin-bottom: -15px;
 margin-left: -5px;}
-.wpas-search_query {max-width: 150px}
+.wpas-search_query {max-width: 150px;position: absolute;bottom: 0;}
 .wpas-search_query input {
-  margin-bottom: 2px;
+  margin-bottom: 1px;
 padding: 2px;
+line-height: 1;
+height: 27px;
+-webkit-appearance: none;
 }
 .featured-image > img {
   height: auto;
   width: 100%;
 }
-
+input::-webkit-input-placeholder {line-height: 1}
 }/*  555 */
