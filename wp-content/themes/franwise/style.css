@@ -161,7 +161,9 @@ body.page-template-page-inner .content,body.page-template-default .content, body
 .team-member{display:flex;margin-bottom:65px}
 .member-bio h3{margin-top:0}
 .member-bio{padding-left:40px}
-
+.member-photo > img {
+  max-width: 250px;
+}
 
 /* clients */
 .client-wrap{align-items:center;display:flex;flex-wrap:wrap}
@@ -367,7 +369,7 @@ div.ginput_container_name span {padding: 0 10px}
 }
 	.header{padding:13px 10px}
 	h1,.footer-banner h2{font-size:6vw;margin-bottom:25px}
-	.mobile-menu{background:#f4f5f5 none repeat scroll 0 0;display:block;padding:40px 10px;text-align:center}
+	.mobile-menu{background:#f4f5f5 none repeat scroll 0 0;display:block;padding:40px 10px;text-align:center;width: 100%;}
 	.mobile-menu.is_stuck {padding-top: 100px}
 	.search-bar{display:inline-block;float:none;margin-top:4%;text-align:center;width:100%}
 	.wpas-search_query input{background:transparent}
@@ -382,7 +384,7 @@ div.ginput_container_name span {padding: 0 10px}
 	.hero-banner .cta a{display:inline;font-size:20px}
 	body.page-template-page-inner .main .inner,body.page-template-default .main .inner{display:unset}
 	body.page-template-page-inner .content,body.page-template-default .content,body.blog .content{flex:unset;float:none;max-width:100%;padding:20px 10px}
-	.team-member{display:flex;flex-flow:row wrap;margin-bottom:65px}
+	.team-member{display:flex;flex-flow:row wrap;margin-bottom:65px;overflow: hidden;}
 	.member-photo{margin-bottom:20px;text-align:center;width:100%}
 	.content{color:#3b3b3b;font-size:21px;padding:50px 10px}
 	.member-bio{padding-left:0}
@@ -405,9 +407,9 @@ div.ginput_container_name span {padding: 0 10px}
 	
 	
 	.wp-advanced-search {
-  display: block;
-  position: relative
-}
+  	display: block;
+		position: relative
+	}
 	
 #wpas-submit {
   bottom: 0;
@@ -419,8 +421,8 @@ div.ginput_container_name span {padding: 0 10px}
 	.wpas-submit.button {padding: 5px;margin: 0}
 	#wpas-submit.active {width: 59px;
 transition: all 0.3s ease 0s;
-margin-bottom: -15px;
-margin-left: -5px;}
+margin-bottom: 0px;
+margin-left: 0px;}
 .wpas-search_query {max-width: 150px;position: absolute;bottom: 0;}
 .wpas-search_query input {
   margin-bottom: 1px;
