@@ -304,6 +304,7 @@ body.blog .read-more a {text-decoration: none;}
   margin-bottom: 20px;
   width: 100%;
 }
+.footer a {color: #fff}
 
 /*
 div.ginput_container_name span {padding: 0 10px}

@@ -27,7 +27,7 @@
 		<div class="inner clearfix">
 			<?php wp_nav_menu( array('menu' => 'Footer Navigation', 'menu_class' => 'menu footer-nav') ); ?>
 			<div class="copyright">
-				&copy; 2016 FranWise. All Rights Reserved.
+				&copy; 2016 FranWise. All Rights Reserved. | <a href="<?php bloginfo('url') ?>/privacy/" target="_blank">Privacy</a>
 			</div><!-- .copyright -->
 		</div><!-- .inner -->
 	</div><!-- .footer -->
