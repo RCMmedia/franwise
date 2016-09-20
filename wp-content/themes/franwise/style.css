@@ -162,7 +162,7 @@ body.page-template-page-inner .content,body.page-template-default .content, body
 .member-bio h3{margin-top:0}
 .member-bio{padding-left:40px}
 .member-photo > img {
-  max-width: 250px;
+  width: 250px; height: auto;
 }
 
 /* clients */
